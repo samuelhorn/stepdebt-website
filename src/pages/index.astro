@@ -1,16 +1,20 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <h1>StepDebt</h1>
-  </body>
-</html>
+<Layout title="StepDebt">
+  <div class="flex flex-col sm:flex-row items-center gap-12">
+    <img src="/screen.png" alt="StepDebt" class="w-[320px] rounded-3xl" />
+    <div class="max-w-[320px] sm:w-auto">
+      <h1>StepDebt – The Step Counter That Keeps You Accountable</h1>
+      <p>
+        Missed your step goal? StepDebt adds it to tomorrow. Walk extra? It goes
+        to your step bank. A minimalist step tracker that helps you stay
+        consistent—without guilt or pressure.
+      </p>
+      <a href="/">
+        <img src="/appstore.svg" alt="Download on the App Store" class="w-40" />
+      </a>
+    </div>
+  </div>
+</Layout>

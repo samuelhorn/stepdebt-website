@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #151515;
+  --color-foreground-primary: #ffffff;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground-primary/70 text-lg;
+  }
+
+  h1 {
+    @apply text-4xl font-medium text-foreground-primary;
+  }
+
+  p {
+    @apply my-4;
+  }
+
+  ul {
+    @apply list-disc list-outside pl-4;
+  }
+
+  li {
+    @apply my-2;
+  }
+
+  a {
+    @apply underline underline-offset-4 text-foreground-primary;
+  }
+}

@@ -1,0 +1,25 @@
+---
+import "../styles/global.css";
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <article
+      class="container mx-auto max-w-screen-md flex-1 p-6 flex flex-col justify-center"
+    >
+      <slot />
+    </article>
+    <nav
+      class="container mx-auto max-w-screen-md text-center flex gap-4 justify-center p-6 text-foreground-primary underline underline-offset-4 text-sm"
+    >
+      <a href="/">Home</a>
+      <a href="/privacy-policy">Privacy Policy</a>
+    </nav>
+  </body>
+</html>

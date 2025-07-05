@@ -1,36 +1,27 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Privacy Policy - StepDebt</title>
-  </head>
-  <body>
-    <h1>Privacy Policy</h1>
-    <p>
-      StepDebt respects your privacy. This app does not collect, store, or share
-      any personal data with third parties.
-    </p>
-    <ul>
-      <li>
-        All data (such as step counts, goals, bank, and debt) is stored locally
-        on your device.
-      </li>
-      <li>The app does not transmit any information to external servers.</li>
-      <li>We do not use analytics, ads, or tracking of any kind.</li>
-      <li>
-        You are fully in control of your data. Deleting the app will permanently
-        remove all stored information.
-      </li>
-    </ul>
-    <p>
-      If you have any questions about privacy, feel free to contact us at:
-      <a href="mailto:info@stepdebt.com">info@stepdebt.com</a>
-    </p>
-  </body>
-</html>
+<Layout title="Privacy Policy - StepDebt">
+  <h1 class="text-4xl font-bold">Privacy Policy</h1>
+  <p>
+    StepDebt respects your privacy. This app does not collect, store, or share
+    any personal data with third parties.
+  </p>
+  <ul>
+    <li>
+      All data (such as step counts, goals, bank, and debt) is stored locally on
+      your device.
+    </li>
+    <li>The app does not transmit any information to external servers.</li>
+    <li>We do not use analytics, ads, or tracking of any kind.</li>
+    <li>
+      You are fully in control of your data. Deleting the app will permanently
+      remove all stored information.
+    </li>
+  </ul>
+  <p>
+    If you have any questions about privacy, feel free to contact us at:
+    <a href="mailto:info@stepdebt.com">info@stepdebt.com</a>
+  </p>
+</Layout>
