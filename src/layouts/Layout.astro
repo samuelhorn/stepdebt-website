@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 const { title } = Astro.props;
+import { Font } from "astro:assets";
 ---
 
 <html lang="en">
@@ -8,10 +9,11 @@ const { title } = Astro.props;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
+    <Font cssVariable="--font-plus-jakarta-sans" preload />
   </head>
   <body class="flex flex-col min-h-screen">
     <article
-      class="container mx-auto max-w-screen-md flex-1 p-6 flex flex-col justify-center"
+      class="container mx-auto max-w-screen-lg flex-1 p-6 flex flex-col justify-center"
     >
       <slot />
     </article>

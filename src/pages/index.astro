@@ -5,7 +5,7 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Step Debt – The Step Counter That Keeps You Accountable">
   <div class="flex flex-col sm:flex-row items-center gap-12">
     <img src="/screen.png" alt="StepDebt" class="w-[320px] rounded-3xl" />
-    <div class="max-w-[320px] sm:w-auto">
+    <div class="max-w-[320px] sm:max-w-none">
       <h1>Step Debt – The Step Counter That Keeps You Accountable</h1>
       <p>
         Missed your step goal? StepDebt adds it to tomorrow. Walk extra? It goes
@@ -13,7 +13,11 @@ import Layout from "../layouts/Layout.astro";
         consistent—without guilt or pressure.
       </p>
       <a href="/">
-        <img src="/appstore.svg" alt="Download on the App Store" class="w-40" />
+        <img
+          src="/appstore.svg"
+          alt="Download on the App Store"
+          class="w-40 mt-8"
+        />
       </a>
     </div>
   </div>

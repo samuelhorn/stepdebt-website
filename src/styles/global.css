@@ -8,10 +8,11 @@
 @layer base {
   body {
     @apply bg-background text-foreground-primary/70 text-lg;
+    font-family: var(--font-plus-jakarta-sans);
   }
 
   h1 {
-    @apply text-4xl font-medium text-foreground-primary;
+    @apply mb-6 font-bold text-4xl md:text-6xl text-foreground-primary;
   }
 
   p {
