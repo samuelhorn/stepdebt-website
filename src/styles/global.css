@@ -12,7 +12,7 @@
   }
 
   h1 {
-    @apply mb-6 font-bold text-4xl md:text-6xl text-foreground-primary;
+    @apply mb-6 font-bold text-4xl md:text-5xl text-foreground-primary;
   }
 
   p {
